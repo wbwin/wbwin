@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美食介绍</title>
+<style type="text/css">
+body {font: 12px/1.231 SimSun, arial, helvetica, clean, sans-serif;
+background-image:url(images/6657e0d1fbcb88d.jpg);
+background-size:cover;
+background-repeat:repeat;
+}
+li{
+	list-style:none;}
+.wz{
+	 width:1000px;
+	 margin:0 auto;
+}
+.one{
+	height:72px;
+	padding-top:26px;
+	background-image: url(../images/loo.png);
+	background-repeat: no-repeat;
+	background-position: 800px 4px;
+}
+
+.one img{
+	 display:block; 
+	 float:left;
+}
+
+.one ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:640px;
+	color: #0f8f3c;
+}
+
+.one ul li{
+	float:left;
+	margin-left:22px;
+	padding-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+
+.one ul li a{
+	 color:#0f8f3c;
+	 font-size:14px;
+}
+
+.one ul li a:hover{
+	 color:#e86462;
+ 	 text-decoration:underline;
+}
+.three{
+	height:100px;
+	width:1000px;
+
+	background-repeat: no-repeat;
+	background-position: 800px 4px;}
+.three ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:1000px;
+	
+	}
+.three ul li{
+	float:left;
+	margin-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+.four{
+	height:670px;
+	width:1000px;
+	margin-top:70px;
+	margin-left:50px;
+
+	background-repeat: no-repeat;
+	background-position: 800px 4px;}
+.four ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:1000px;
+	
+	}
+.four ul li{
+	float:left;
+	margin-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+.left{
+	text-align:left;
+	font-weight:200;
+	}
+#photo{
+	position:absolute;
+	top:50px;
+	left:30px;
+	border:1px #3366FF solid;
+	background-color:#FFF;
+	width:200px;
+	height:200px;
+	display:none;	}
+#big{
+	width:200px;
+	}
+	.footer{ height:130px;  padding-top:14px;}
+
+.footer p{ width:1000px; margin:0 auto; text-align:center; line-height:26px; color:#000}
+
+.footer p a,.footer p a:visited{ color:#000;}
+
+.footer p a:hover{ text-decoration:underline;}
+
+
+</style>
+<script>
+   function show(){
+	   document.getElementById("photo").style.display="block";
+	   }
+   function showBig(temp,event){
+	    document.getElementById("photo").style.display="block";
+	   var x,y;
+	   x=parseInt(event.clientX)+parseInt(document.documentElement.scrollLeft);
+	   y=parseInt(event.clientY)+parseInt(document.documentElement.scrollTop);
+	   document.getElementById("photo").style.top=y+"px";
+	   document.getElementById("photo").style.left=x+"px";
+	   document.getElementById("big").src="images/"+temp;
+	   }
+	function hid(){
+		document.getElementById("photo").style.display="none";
+		}
+	window.onscroll=showBig;
+</script>
+</head>
+
+<body>
+<div class="wz">
+
+  <div class="one">
+
+			<a href="index.html"><img src="images/wwb.jpg" width="294" height="80" alt="" title="美食"></a>
+
+       		<ul>
+
+<li><a href="index.html">网站首页</a></li>       
+
+                <li><a href="two.html">美食介绍</a></li>     
+
+                <li><a href="three.html">美食大图</a></li>        
+
+                <li><a href="four.html">美食抽奖</a></li>      
+
+                <li><a href="five.html">加入我们</a></li>
+
+     		</ul>  
+
+    </div>
+
+	<div class="three">
+    	<ul>
+      <marquee behavior="scroll" scrollamount="10"> <li> <img src="images/tp.png"  width="100" height="100"/></li>
+    		<li>
+            	<img src="images/x2.png" width="100" height="100"
+            </li>
+            <li>
+            	<img src="images/x3.png" width="100" height="100"
+            </li>
+            <li>
+            	<img src="images/x6.png" width="100" height="100"
+            </li>
+            <li>
+            	<img src="images/x5.png" width="100" height="100"
+            </li></marquee>
+            
+    	</ul>
+    </div>
+    <div class="four">
+    <table width="100%" border="1" style="border-collapse:collapse; border-style:solid; border-color:#000; font-size:14px; font-weight:bold; text-align:center;" >
+<tr id="aa">
+<td width="100px">图片</td>
+<td>食物食谱</td>
+
+</tr>
+<tr>
+<td><img src="images/b1.jpg"  id="pic" width="100%" height="100%" onmousemove="showBig('b1big.jpg',event)" onmouseout="hid()"/></td>
+<td class="left">韩国炸鸡制作主料：鸡腿10只，油炸粉200g，蒜泥1大勺，洋葱泥2大勺，辣椒粉1勺，盐0.5勺，胡椒粉0.5勺，牛奶300ml，清水120ml[1]  。1、将鸡腿放进大碗中
+2、将鸡腿用清水洗净并沥干水分
+3、在碗中加入300ml的牛奶，浸泡30分钟
+ 
+韩国炸鸡 
+4、30分钟后，将浸泡鸡腿的牛奶倒去
+5、取一只小碗，加入蒜泥1大勺，洋葱泥2大勺，辣椒粉1勺，盐0.5勺，胡椒粉0.5勺，搅拌均匀成腌料
+
+12、将腌好的鸡腿，先放入稀糊中滚一圈，是鸡腿各个方位都裹上面糊
+13、将裹有面糊的鸡腿，放入装有干油炸粉的碗中再滚一圈，使鸡腿表面均匀沾有干油炸粉
+14、将鸡腿放入油锅中炸，炸的过程中，在鸡腿肉厚的地方，用食用剪刀剪1-2个口子，这样可以使鸡腿炸透，炸熟
+15、待鸡腿炸至金黄酥脆，捞出沥干油份即可装盘，鸡腿表面撒少许葱白做装饰[1]  </td>
+
+</tr>
+<tr>
+<td><img src="images/b2.jpg" id="pic" width="100%" height="100%" onmousemove="showBig('b2big.jpg',event)" onmouseout="hid()"/></td>
+<td class="left">披萨：【主料】面粉
+【辅料】口蘑
+【做法】
+1.将奶粉、黄油放进面粉中和好，醒2个小时
+2.将洋葱洗净切成圈，青椒洗净切成丁，口蘑洗净切成片
+3.在煎盘上倒少许油，将面团放入盘中按成一个中间薄边缘厚的圆饼，用牙签均匀的在
+饼上扎满小孔，然后铺上番茄沙司和香蒜辣酱，加上洋葱、青椒、口蘑、虾仁、乳酪丝
+4.将放好调料的比萨饼放入微波炉中10分钟，再按（烤脆）键5分钟后即可。</td>
+
+</tr>
+<tr>
+<td><img src="images/b3.jpg" id="pic"   width="100%" height="100%"onmousemove="showBig('b3big.jpg',event)" onmouseout="hid()"/></td>
+<td class="left">香肠：瘦猪肉90公斤、白砂糖5公斤、肥猪肉10公斤、精盐3公斤、味精200克、白酒750克、鲜姜末（或大蒜泥）150克。1、切丁：将瘦肉先顺丝切成肉片，再切成肉条，最后切成0。5厘米的小方丁。
+2、漂流：瘦肉丁用1%浓度盐水浸泡，定时搅拌、促使血水加速溶出，减少成品氧化而色泽变深。2小时后除去污盐水，再用盐水浸泡6-8小时，最后冲洗干净，滤干。肥肉丁用开水烫洗后立即用凉水洗净擦干。
+3、腌渍：洗净的肥、瘦肉丁混合，接比例配入调料拌匀，腌渍8小时左右。每隔2小时上下翻动一次使调味均匀，腌渍时防高温、防日光照洒、防蝇虫及灰尘污染.
+</td>
+
+</tr>
+<tr>
+<td><img src="images/b4.jpg" id="pic" width="100%" height="100%" onmousemove="showBig('b4big.jpg',event)" onmouseout="hid()"/></td>
+<td class="left">鱼露（FishSauce)：
+鱼露是一种典型的泰国南部调料，也有人它叫白酱油，顾名思义它就是像酱油一样的调味品，做法和中国酱油差不多，主是让一些小鱼小虾发酵滴汁而成。味道可能会让有些人不适，因为它带有一股浓浓的臭鱼烂虾的味道。让不习惯吃鱼腥的人大倒胃口，掩鼻而逃。</td>
+
+</tr>
+<tr>
+<td><img src="images/b5.jpg" id="pic" width="100%" height="100%" onmousemove="showBig('b5big.jpg',event)" onmouseout="hid()"/></td>
+<td class="left">菜肉煎饼:1. 材料：猪肉（前腿上部肥瘦相间的部分），青菜，鸡蛋
+2. 猪肉洗净沥干水份，剁成肉末
+3. 青菜入开水锅焯1分钟左右
+4. 5.焯好的青菜用冷水冲一下，挤干水份，剁成菜末（过冷水可保持青菜的碧绿）
+5. 肉末和菜末各半，加鸡蛋，盐，糖，料酒，少许葱姜水拌匀（切碎的葱和姜用水泡一会就成葱姜水了）
+6. 拌好的饼糊是可以勉强流动的状态
+7. 不粘锅加少许油烧热，倒入饼糊中小火煎至定型后，用刀划成小块再翻面，继续煎至微焦即可（整块饼不容易翻面，划成小块就容易多了</td>
+
+</tr>
+</table>
+<div id="photo" onmousemove="show()" onmouseout="hid()"><img src="images/b1big.jpg" id="big" />
+    
+    </div>
+    <div class="footer"> 
+
+	<p><a href="index.html">首页</a> | <a href="two.html">介绍</a> | <a href="three.html">大图</a> | <a href="four.html">抽奖</a> |  <a href="five.html">加入我们</a></p>
+
+<p>Copyright &copy; 2016－2017 All Rights Reserved 版权所有 8008208820</p>
+  <p>地址：广州工商学院32栋207  来源:<a href="index.html" target="_blank">王伟斌</a> </p>
+  
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美食抽奖</title>
+<style type="text/css">
+body {font: 12px/1.231 SimSun, arial, helvetica, clean, sans-serif;
+background-image:url(images/6657e0d1fbcb88d.jpg);
+background-size:cover;
+background-repeat:repeat;
+}
+li{
+	list-style:none;}
+.wz{
+	 width:1000px;
+	 margin:0 auto;
+}
+.one{
+	height:72px;
+	padding-top:26px;
+	background-image: url(../images/loo.png);
+	background-repeat: no-repeat;
+	background-position: 800px 4px;
+}
+
+.one img{
+	 display:block; 
+	 float:left;
+}
+
+.one ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:640px;
+	color: #0f8f3c;
+}
+
+.one ul li{
+	float:left;
+	margin-left:22px;
+	padding-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+
+.one ul li a{
+	 color:#0f8f3c;
+	 font-size:14px;
+}
+
+.one ul li a:hover{
+	 color:#e86462;
+ 	 text-decoration:underline;
+}
+.five{
+	height:100px;
+	width:1000px;
+	padding-left:70px;
+
+	background-repeat: no-repeat;
+	background-position: 800px 4px;}
+.five ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:1000px;
+	
+	}
+.five ul li{
+	float:left;
+	margin-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+.six{
+	height:100px;
+	width:1000px;
+	margin-top:150px;
+	margin-left:220px;
+
+	background-repeat: no-repeat;
+	background-position: 800px 4px;}
+.six ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:1000px;
+	
+	}
+.six ul li{
+	float:left;
+	margin-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+.dd{
+	padding-left:200px;}
+		.footer{ height:130px;  padding-top:14px;}
+
+.footer p{ width:1000px; margin:0 auto; text-align:center; line-height:26px; color:#000}
+
+.footer p a,.footer p a:visited{ color:#000;}
+
+.footer p a:hover{ text-decoration:underline;}
+</style>
+<script>
+   function start(){
+	   var nums=new Array();
+	   nums[0]=Math.floor(Math.random()*7+1);
+	   for(var i=1;i<5;i++){
+		   nums[i]=Math.floor(Math.random()*7+1);
+	   }
+	   document.getElementById("td1").innerHTML=nums[0];
+	   document.getElementById("td2").innerHTML=nums[1];
+	   document.getElementById("td3").innerHTML=nums[2];
+	   document.getElementById("td4").innerHTML=nums[3];
+	   document.getElementById("td5").innerHTML=nums[4];
+	  
+	   time=setTimeout("start()",60);
+   }
+   function stop(){
+   clearTimeout(time);
+   }
+   </script>
+</head>
+
+<body>
+<div class="wz">
+
+  <div class="one">
+
+			<a href="index.html"><img src="images/wwb.jpg" width="294" height="80" alt="" title="美食"></a>
+
+       		<ul>
+
+<li><a href="index.html">网站首页</a></li>       
+
+                <li><a href="two.html">美食介绍</a></li>     
+
+                <li><a href="three.html">美食大图</a></li>        
+
+                <li><a href="four.html">美食抽奖</a></li>      
+
+                <li><a href="five.html">加入我们</a></li>
+
+     		</ul>  
+
+    </div>
+    <div class="five">
+   <ul> <li><img src="images/c2.jpg" width="600" height="200" /></li>
+    </ul>
+    </div>
+    <div class="six">
+    
+    
+    	<table style="width:500px; height:50px; font-size:48px; text-align:center;" c>
+      <tr>
+      <td id="td1">00</td>
+      <td id="td2">00</td>
+      <td id="td3">00</td>
+      <td id="td4">00</td>
+      <td id="td5">00</td>
+      
+      </tr>
+      </table>
+ <div class="dd">     
+<input type="button" onclick="start()" value="开始" />
+<input type="button" onclick="stop()" value="停止" />
+    </div>
+    </div>
+      <div class="footer"> 
+
+	<p><a href="index.html">首页</a> | <a href="two.html">介绍</a> | <a href="three.html">大图</a> | <a href="four.html">抽奖</a> |  <a href="five.html">加入我们</a></p>
+
+<p>Copyright &copy; 2016－2017 All Rights Reserved 版权所有 8008208820</p>
+  <p>地址：广州工商学院32栋207  来源:<a href="index.html" target="_blank">王伟斌</a> </p>
+  
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>加入我们</title>
+<style type="text/css">
+body {font: 12px/1.231 SimSun, arial, helvetica, clean, sans-serif;
+background-image:url(images/6657e0d1fbcb88d.jpg);
+background-size:cover;
+background-repeat:repeat;
+}
+li{
+	list-style:none;}
+.wz{
+	 width:1000px;
+	 margin:0 auto;
+}
+.one{
+	height:72px;
+	padding-top:26px;
+	background-image: url(../images/loo.png);
+	background-repeat: no-repeat;
+	background-position: 800px 4px;
+}
+
+.one img{
+	 display:block; 
+	 float:left;
+}
+
+.one ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:640px;
+	color: #0f8f3c;
+}
+
+.one ul li{
+	float:left;
+	margin-left:22px;
+	padding-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+
+.one ul li a{
+	 color:#0f8f3c;
+	 font-size:14px;
+}
+
+.one ul li a:hover{
+	 color:#e86462;
+ 	 text-decoration:underline;
+}
+.last{
+	height:500px;
+	width:1000px;
+	padding-left:70px;
+
+	background-repeat: no-repeat;
+	background-position: 800px 4px;}
+.last ul{
+	float:left;
+	height:30px;
+	line-height:30px;
+	padding-top:20px;
+	padding-left:60px;
+	width:1000px;
+	
+	}
+.last ul li{
+	float:left;
+	margin-left:50px;
+	display:inline;
+	color: #0f8f3c;
+}
+.main{
+		margin:auto;
+	}
+	.hr_1{
+		font-size:14px;
+		font-weight:bold;
+		color:#039;
+		border-bottom-width:2px;
+		border-bottom-color:#039;
+		border-bottom-style:solid;
+		height:35px;
+		vertical-align:bottom;
+		padding-left:12px;
+	}
+	.left{
+		text-align:right;
+		width:150px;
+		height:25px;
+	}
+	.center{
+		width:135px;
+	}
+	.inputClass{
+		width:130px;
+		height:16px;
+		border:solid 1px #333333;
+	}
+	#time{
+		float:right;
+		color:#000;
+		padding-top:135px;
+		width:600px;
+		font-size:12px;
+		}
+	.tt{
+		background-image:url(images/z11.jpg);}
+		.footer{ height:130px;  padding-top:14px;}
+
+.footer p{ width:1000px; margin:0 auto; text-align:center; line-height:26px; color:#000}
+
+.footer p a,.footer p a:visited{ color:#000;}
+
+.footer p a:hover{ text-decoration:underline;}
+</style>
+<script>
+	function $(elementId){
+		return document.getElementById(elementId);
+	}
+	function checkUser(){
+		//alert("hh");
+		var user=$("user").value;
+		var userId=$("user_prompt");//提示语句所在的div
+		userId.innerHTML="";
+		var reg=/^[a-zA-Z_]{4,16}$/;
+		if(reg.test(user)==false)
+		{
+			userId.innerHTML="用户名格式不正确";
+			return false;
+		}
+		return true;
+		
+	}
+	function checkPwd(){
+		var pwd=$("password").value;
+		var pwdId=$("pwd_prompt");
+		pwdId.innerHTML="";
+		var reg=/^\w{4,10}$/;
+		if(reg.test(pwd)==false)
+		{
+			pwdId.innerHTML="密码长度不正确";
+			return false;
+		}
+		return true;
+
+	}
+	function checkRePwd(){
+		var repwd=$("repwd").value;
+		var repwdId=$("repwd_prompt");
+		var pwd=$("password").value;
+		repwdId.innerHTML="";
+		if(repwd!=pwd)
+		{
+			repwdId.innerHTML="两次密码不一致";
+			return false;
+		}
+		return true;
+	}
+	function checkEmail(){
+		var email=$("email").value;
+		var emailId=$("email_prompt");
+		emailId.innerHTML="";
+		var reg=/^\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$/;             
+		if(reg.test(email)==false)
+		{
+			emailId.innerHTML="邮箱地址格式不正确";
+			return false;
+		}
+		return true;
+	}
+	function checkMobile(){
+		var mobile=$("mobile").value;
+		var mobileId=$("mobile_prompt");
+		mobileId.innerHTML="";
+		var reg=/^1\d{10}$/;
+		if(reg.test(mobile)==false)
+		{
+			mobileId.innerHTML="手机号码不正确";
+			return false;
+		}
+		return true;
+	}
+	function checkBirth(){
+		var birth=$("birth").value;
+		var birthId=$("birth_prompt");
+		birthId.innerHTML="";
+		var reg=/^((19\d{2})|(20\d{2}))-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[0-1])$/;
+		if(reg.test(birth)==false)
+		{
+			birthId.innerHTML="出生日期格式不正确";
+			return false;
+		}
+		return true;
+	}
+	function showTime(){
+	var now=new Date();
+	document.getElementById("time").innerHTML="当前时间为："+now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+	setTimeout("showTime()",1000);
+	
+	}
+</script>
+
+</head>
+
+<body onload="showTime()">
+<div class="wz">
+
+  <div class="one">
+
+			<a href="index.html"><img src="images/wwb.jpg" width="294" height="80" alt="" title="美食"></a>
+
+       		<ul>
+
+<li><a href="index.html">网站首页</a></li>       
+
+                <li><a href="two.html">美食介绍</a></li>     
+
+                <li><a href="three.html">美食大图</a></li>        
+
+                <li><a href="four.html">美食抽奖</a></li>      
+
+                <li><a href="five.html">加入我们</a></li>
+     		</ul>  
+
+    </div>
+    <div class="last">
+    <ul>
+    	<li>
+      <table class="main">
+	<tr class="tt">
+    	<td colspan="3" >
+        	 
+            <li id="time"></li>
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="3" class="hr_1">新用户信息</td>
+    </tr>
+    <tr>
+    	<td class="left">用户名：</td>
+        <td class="center"><input type="text" id="user" class="inputClass" onblur="checkUser()"/></td>
+        <td><div id="user_prompt">用户名由4-16位字符组成，不包含数字</div></td>
+    </tr>
+    <tr>
+    	<td class="left">密码：</td>
+        <td class="center"><input type="password" id="password" class="inputClass" onblur="checkPwd()"/></td>
+        <td><div id="pwd_prompt">密码由4-10位字符组成</div></td>
+    </tr>
+    <tr>
+    	<td class="left">确认密码：</td>
+        <td class="center"><input type="password" id="repwd" class="inputClass" onblur="checkRePwd()"/></td>
+        <td><div id="repwd_prompt"></div></td>
+    </tr>
+    <tr>
+    	<td class="left">电子邮箱：</td>
+        <td class="center"><input type="text" id="email" class="inputClass" onblur="checkEmail()"/></td>
+        <td><div id="email_prompt">邮箱格式为：web@126.com</div></td>
+    </tr>
+    <tr>
+    	<td class="left">手机号码：</td>
+        <td class="center"><input type="text" id="mobile" class="inputClass" onblur="checkMobile()"/></td>
+        <td><div id="mobile_prompt">手机号码为11位</div></td>
+    </tr>
+    <tr>
+    	<td class="left">出生日期：</td>
+        <td class="center"><input type="text" id="birth" class="inputClass" onblur="checkBirth()"/></td>
+        <td><div id="birth_prompt">请按XXXX-XX-XX格式输入出生日期</div></td>
+    </tr>
+    <tr>	
+    	<td class="left">&nbsp;</td>
+        <td class="center"><input type="image" src="images/z3.png" /></td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+        </li>
+    </ul>
+    </div>
+    <div class="footer"> 
+
+	<p><a href="index.html">首页</a> | <a href="two.html">介绍</a> | <a href="three.html">大图</a> | <a href="four.html">抽奖</a> |  <a href="five.html">加入我们</a></p>
+
+<p>Copyright &copy; 2016－2017 All Rights Reserved 版权所有 8008208820</p>
+  <p>地址：广州工商学院32栋207   来源:<a href="index.html" target="_blank">王伟斌</a> </p>
+  
+</div>
+</div>
+</body>
+</html>
