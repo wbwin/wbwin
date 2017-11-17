@@ -121,6 +121,92 @@ li{
 
 .footer p a:hover{ text-decoration:underline;}
 </style>
+
+
+</head>
+
+<body onload="showTime()">
+<div class="wz">
+
+  <div class="one">
+
+			<a href="index.html"><img src="images/wwb.jpg" width="294" height="80" alt="" title="美食"></a>
+
+       		<ul>
+
+<li><a href="index.html">网站首页</a></li>       
+
+                <li><a href="two.html">美食介绍</a></li>     
+
+                <li><a href="three.html">美食大图</a></li>        
+
+                <li><a href="four.html">美食抽奖</a></li>      
+
+                <li><a href="five.html">加入我们</a></li>
+     		</ul>  
+
+    </div>
+    <div class="last">
+    <ul>
+    	<li>
+      <table class="main">
+	<tr class="tt">
+    	<td colspan="3" >
+        	 
+            <li id="time"></li>
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="3" class="hr_1">新用户信息</td>
+    </tr>
+    <tr>
+    	<td class="left">用户名：</td>
+        <td class="center"><input type="text" id="user" class="inputClass" onblur="checkUser()"/></td>
+        <td><div id="user_prompt">用户名由4-16位字符组成，不包含数字</div></td>
+    </tr>
+    <tr>
+    	<td class="left">密码：</td>
+        <td class="center"><input type="password" id="password" class="inputClass" onblur="checkPwd()"/></td>
+        <td><div id="pwd_prompt">密码由4-10位字符组成</div></td>
+    </tr>
+    <tr>
+    	<td class="left">确认密码：</td>
+        <td class="center"><input type="password" id="repwd" class="inputClass" onblur="checkRePwd()"/></td>
+        <td><div id="repwd_prompt"></div></td>
+    </tr>
+    <tr>
+    	<td class="left">电子邮箱：</td>
+        <td class="center"><input type="text" id="email" class="inputClass" onblur="checkEmail()"/></td>
+        <td><div id="email_prompt">邮箱格式为：web@126.com</div></td>
+    </tr>
+    <tr>
+    	<td class="left">手机号码：</td>
+        <td class="center"><input type="text" id="mobile" class="inputClass" onblur="checkMobile()"/></td>
+        <td><div id="mobile_prompt">手机号码为11位</div></td>
+    </tr>
+    <tr>
+    	<td class="left">出生日期：</td>
+        <td class="center"><input type="text" id="birth" class="inputClass" onblur="checkBirth()"/></td>
+        <td><div id="birth_prompt">请按XXXX-XX-XX格式输入出生日期</div></td>
+    </tr>
+    <tr>	
+    	<td class="left">&nbsp;</td>
+        <td class="center"><input type="image" src="images/z3.png" /></td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+        </li>
+    </ul>
+    </div>
+    <div class="footer"> 
+
+	<p><a href="index.html">首页</a> | <a href="two.html">介绍</a> | <a href="three.html">大图</a> | <a href="four.html">抽奖</a> |  <a href="five.html">加入我们</a></p>
+
+<p>Copyright &copy; 2016－2017 All Rights Reserved 版权所有 8008208820</p>
+  <p>地址：广州工商学院32栋207   来源:<a href="index.html" target="_blank">王伟斌</a> </p>
+  
+</div>
+</div>
 <script>
 	function $(elementId){
 		return document.getElementById(elementId);
@@ -207,90 +293,5 @@ li{
 	
 	}
 </script>
-
-</head>
-
-<body onload="showTime()">
-<div class="wz">
-
-  <div class="one">
-
-			<a href="index.html"><img src="images/wwb.jpg" width="294" height="80" alt="" title="美食"></a>
-
-       		<ul>
-
-<li><a href="index.html">网站首页</a></li>       
-
-                <li><a href="two.html">美食介绍</a></li>     
-
-                <li><a href="three.html">美食大图</a></li>        
-
-                <li><a href="four.html">美食抽奖</a></li>      
-
-                <li><a href="five.html">加入我们</a></li>
-     		</ul>  
-
-    </div>
-    <div class="last">
-    <ul>
-    	<li>
-      <table class="main">
-	<tr class="tt">
-    	<td colspan="3" >
-        	 
-            <li id="time"></li>
-        </td>
-    </tr>
-    <tr>
-    	<td colspan="3" class="hr_1">新用户信息</td>
-    </tr>
-    <tr>
-    	<td class="left">用户名：</td>
-        <td class="center"><input type="text" id="user" class="inputClass" onblur="checkUser()"/></td>
-        <td><div id="user_prompt">用户名由4-16位字符组成，不包含数字</div></td>
-    </tr>
-    <tr>
-    	<td class="left">密码：</td>
-        <td class="center"><input type="password" id="password" class="inputClass" onblur="checkPwd()"/></td>
-        <td><div id="pwd_prompt">密码由4-10位字符组成</div></td>
-    </tr>
-    <tr>
-    	<td class="left">确认密码：</td>
-        <td class="center"><input type="password" id="repwd" class="inputClass" onblur="checkRePwd()"/></td>
-        <td><div id="repwd_prompt"></div></td>
-    </tr>
-    <tr>
-    	<td class="left">电子邮箱：</td>
-        <td class="center"><input type="text" id="email" class="inputClass" onblur="checkEmail()"/></td>
-        <td><div id="email_prompt">邮箱格式为：web@126.com</div></td>
-    </tr>
-    <tr>
-    	<td class="left">手机号码：</td>
-        <td class="center"><input type="text" id="mobile" class="inputClass" onblur="checkMobile()"/></td>
-        <td><div id="mobile_prompt">手机号码为11位</div></td>
-    </tr>
-    <tr>
-    	<td class="left">出生日期：</td>
-        <td class="center"><input type="text" id="birth" class="inputClass" onblur="checkBirth()"/></td>
-        <td><div id="birth_prompt">请按XXXX-XX-XX格式输入出生日期</div></td>
-    </tr>
-    <tr>	
-    	<td class="left">&nbsp;</td>
-        <td class="center"><input type="image" src="images/z3.png" /></td>
-        <td>&nbsp;</td>
-    </tr>
-</table>
-        </li>
-    </ul>
-    </div>
-    <div class="footer"> 
-
-	<p><a href="index.html">首页</a> | <a href="two.html">介绍</a> | <a href="three.html">大图</a> | <a href="four.html">抽奖</a> |  <a href="five.html">加入我们</a></p>
-
-<p>Copyright &copy; 2016－2017 All Rights Reserved 版权所有 8008208820</p>
-  <p>地址：广州工商学院32栋207   来源:<a href="index.html" target="_blank">王伟斌</a> </p>
-  
-</div>
-</div>
 </body>
 </html>
