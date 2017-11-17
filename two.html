@@ -125,24 +125,7 @@ li{
 
 
 </style>
-<script>
-   function show(){
-	   document.getElementById("photo").style.display="block";
-	   }
-   function showBig(temp,event){
-	    document.getElementById("photo").style.display="block";
-	   var x,y;
-	   x=parseInt(event.clientX)+parseInt(document.documentElement.scrollLeft);
-	   y=parseInt(event.clientY)+parseInt(document.documentElement.scrollTop);
-	   document.getElementById("photo").style.top=y+"px";
-	   document.getElementById("photo").style.left=x+"px";
-	   document.getElementById("big").src="images/"+temp;
-	   }
-	function hid(){
-		document.getElementById("photo").style.display="none";
-		}
-	window.onscroll=showBig;
-</script>
+
 </head>
 
 <body>
@@ -259,5 +242,23 @@ li{
   
 </div>
 </div>
+<script>
+   function show(){
+	   document.getElementById("photo").style.display="block";
+	   }
+   function showBig(temp,event){
+	    document.getElementById("photo").style.display="block";
+	   var x,y;
+	   x=parseInt(event.clientX)+parseInt(document.documentElement.scrollLeft);
+	   y=parseInt(event.clientY)+parseInt(document.documentElement.scrollTop);
+	   document.getElementById("photo").style.top=y+"px";
+	   document.getElementById("photo").style.left=x+"px";
+	   document.getElementById("big").src="images/"+temp;
+	   }
+	function hid(){
+		document.getElementById("photo").style.display="none";
+		}
+	window.onscroll=showBig;
+</script>
 </body>
 </html>
