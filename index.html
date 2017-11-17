@@ -104,37 +104,7 @@ background-repeat:repeat;
 .footer p a:hover{ text-decoration:underline;}
 	
 </style>
-<script>
-	var myPic=new Array();
-	myPic[0]="images/wwb2.jpg";
-	myPic[1]="images/wwb4.jpg";
-	myPic[2]="images/wwb5.jpg";
-	myPic[3]="images/wwb6.jpg";
-	myPic[4]="images/wwb7.jpg";
-	index=0;
-	function showPic(){
-		document.getElementById("pic").src=myPic[index];
-		if(index<(myPic.length-1))
-			index++;
-		else
-			index=(index+1)%myPic.length;
-		timer=setTimeout("showPic()",2000);
-	}
-	function showPre(){
-		clearTimeout(timer);
-		if(index>0)
-			index--;
-		else
-			index=4;
-		document.getElementById("pic").src=myPic[index];
-		timer=setTimeout("showPre()",2000);
-	}
-	function showNext(){
-		clearTimeout(timer);
-		showPic();
-	}
-		
-</script>
+
 </head>
 
 <body onload="showPic()" >
@@ -183,4 +153,35 @@ background-repeat:repeat;
 </div>
 
 </body>
+<script>
+	var myPic=new Array();
+	myPic[0]="images/wwb2.jpg";
+	myPic[1]="images/wwb4.jpg";
+	myPic[2]="images/wwb5.jpg";
+	myPic[3]="images/wwb6.jpg";
+	myPic[4]="images/wwb7.jpg";
+	index=0;
+	function showPic(){
+		document.getElementById("pic").src=myPic[index];
+		if(index<(myPic.length-1))
+			index++;
+		else
+			index=(index+1)%myPic.length;
+		timer=setTimeout("showPic()",2000);
+	}
+	function showPre(){
+		clearTimeout(timer);
+		if(index>0)
+			index--;
+		else
+			index=4;
+		document.getElementById("pic").src=myPic[index];
+		timer=setTimeout("showPre()",2000);
+	}
+	function showNext(){
+		clearTimeout(timer);
+		showPic();
+	}
+		
+</script>
 </html>
