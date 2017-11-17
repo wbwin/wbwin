@@ -110,25 +110,7 @@ li{
 
 .footer p a:hover{ text-decoration:underline;}
 </style>
-<script>
-   function start(){
-	   var nums=new Array();
-	   nums[0]=Math.floor(Math.random()*7+1);
-	   for(var i=1;i<5;i++){
-		   nums[i]=Math.floor(Math.random()*7+1);
-	   }
-	   document.getElementById("td1").innerHTML=nums[0];
-	   document.getElementById("td2").innerHTML=nums[1];
-	   document.getElementById("td3").innerHTML=nums[2];
-	   document.getElementById("td4").innerHTML=nums[3];
-	   document.getElementById("td5").innerHTML=nums[4];
-	  
-	   time=setTimeout("start()",60);
-   }
-   function stop(){
-   clearTimeout(time);
-   }
-   </script>
+
 </head>
 
 <body>
@@ -184,5 +166,24 @@ li{
   
 </div>
     </div>
+    <script>
+   function start(){
+	   var nums=new Array();
+	   nums[0]=Math.floor(Math.random()*7+1);
+	   for(var i=1;i<5;i++){
+		   nums[i]=Math.floor(Math.random()*7+1);
+	   }
+	   document.getElementById("td1").innerHTML=nums[0];
+	   document.getElementById("td2").innerHTML=nums[1];
+	   document.getElementById("td3").innerHTML=nums[2];
+	   document.getElementById("td4").innerHTML=nums[3];
+	   document.getElementById("td5").innerHTML=nums[4];
+	  
+	   time=setTimeout("start()",60);
+   }
+   function stop(){
+   clearTimeout(time);
+   }
+   </script>
 </body>
 </html>
