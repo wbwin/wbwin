@@ -1,2 +1,2 @@
 # wbwin.github.io
-adnadsajdn
+静态页面练习
